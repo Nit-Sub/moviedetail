@@ -4,7 +4,7 @@ const AllRoutes = () => {
     return (
         <>
             <Routes>
-                <Route path="" element={<MovieDetail />} />
+                <Route path="" element={<MovieList />} />
                 <Route path="movie/:id" element={<MovieDetail />} />
                 <Route path="movies/popular" element={<MovieList />} />
                 <Route path="movies/top" element={<MovieList />} />
