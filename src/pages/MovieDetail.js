@@ -2,6 +2,6 @@ import React from 'react'
 
 export const MovieDetail = () => {
   return (
-    <div>MovieDetail</div>
+    <div className='text-7xl'>MovieDetail</div>
   )
 }
