@@ -7,9 +7,7 @@ function App() {
       <Header />
       <AllRoutes />
       <Footer />
-
     </div>
   );
 }
-
 export default App;
