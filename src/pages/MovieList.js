@@ -4,7 +4,9 @@ import {Header} from '../components/Header'
 export const MovieList = () => {
   return (
    <>
-   <div>Movie list</div>
+  <main>
+    <section></section>
+  </main>
    </>
   )
 }
