@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { useTitle } from '../hooks/useTitle';
 
-export const MovieDetail = () => {
+export const MovieDetail = ({title}) => {
   const params = useParams();
   const [movie, setMovie] = useState([]);
   const image = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+  useTitle(title)
   useEffect(() => {
     async function fetchDetail() {
       const response = await fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=fcc6d85d62f934ad475896c695d21990`)
