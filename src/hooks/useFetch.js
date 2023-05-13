@@ -9,7 +9,7 @@ const useFetch = (apiPath,queryTerm="") => {
           setData(json.results);
         }
         fetchMovies();
-      }, [apiPath])
+      }, [url])
   return {data}
 }
 
